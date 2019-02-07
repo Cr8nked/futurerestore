@@ -15,12 +15,13 @@
 #include <string.h>
 #include <unistd.h>
 #include <vector>
-#include "futurerestore.hpp"
-#include "tsschecker.h"
 
 #ifdef HAVE_LIBIPATCHER
 #include <libipatcher/libipatcher.hpp>
 #endif
+
+#include "futurerestore.hpp"
+#include "tsschecker.h"
 
 #ifdef WIN32
 #include <windows.h>
