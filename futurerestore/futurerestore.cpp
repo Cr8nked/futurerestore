@@ -620,7 +620,7 @@ int futurerestore::doRestore(const char *ipsw){
     if (_enterPwnRecoveryRequested) //we are in pwnDFU, so we don't need to check nonces
         client->tss = _aptickets.at(0);
     else if (!(client->tss = nonceMatchesApTickets()))
-        reterror(-20, "Devicen ApNonce does not match APTicket nonce\n");
+        reterror(-20, "Device ApNonce does not match APTicket nonce\n");
     
     plist_dict_remove_item(client->tss, "BBTicket");
     plist_dict_remove_item(client->tss, "BasebandFirmware");
